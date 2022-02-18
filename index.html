@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <title>Slider Fashion Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- mycss -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <!-- top -->
+      <div class="top">
+        <!-- logo -->
+        <a href="#" class="text-logo">Thing Fashion</a>
+      </div>
+      <!-- left -->
+      <div class="left">
+        <!-- img logo -->
+        <img src="img/logo.png" class="logo" />
+      </div>
+      <!-- center -->
+      <div class="center">
+        <!-- menu -->
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+
+        <!-- slider container -->
+        <div class="slider-container">
+          <!-- input -->
+          <input type="radio" name="r" id="r1" checked />
+          <input type="radio" name="r" id="r2" />
+          <input type="radio" name="r" id="r3" />
+          <input type="radio" name="r" id="r4" />
+
+          <!-- slide 1 -->
+          <div class="slide slide1 slide-img1"></div>
+          <!-- slide 2 -->
+          <div class="slide slide-img2"></div>
+          <!-- slide 3 -->
+          <div class="slide slide-img3"></div>
+          <!-- slide 4 -->
+          <div class="slide slide-img4"></div>
+        </div>
+
+        <!-- buttons -->
+        <div class="btn-container">
+          <!-- 1 -->
+          <label for="r1">
+            <div class="btn">
+              <!-- slider number -->
+              <p>01</p>
+              <!--btn image  -->
+              <div class="btn-img btn-img1"></div>
+              <!-- heading -->
+              <h1>Summer Campaign</h1>
+              <!-- details -->
+              <p>12 Picture</p>
+              <p>15 Colors</p>
+            </div>
+          </label>
+          <!-- 2 -->
+          <label for="r2">
+            <div class="btn">
+              <!-- slider number -->
+              <p>02</p>
+              <!--btn image  -->
+              <div class="btn-img btn-img2"></div>
+              <!-- heading -->
+              <h1>Summer Campaign</h1>
+              <!-- details -->
+              <p>12 Picture</p>
+              <p>15 Colors</p>
+            </div>
+          </label>
+          <!-- 3 -->
+          <label for="r3">
+            <div class="btn">
+              <!-- slider number -->
+              <p>03</p>
+              <!--btn image  -->
+              <div class="btn-img btn-img3"></div>
+              <!-- heading -->
+              <h1>Summer Campaign</h1>
+              <!-- details -->
+              <p>12 Picture</p>
+              <p>15 Colors</p>
+            </div>
+          </label>
+          <!-- 4 -->
+          <label for="r4">
+            <div class="btn">
+              <!-- slider number -->
+              <p>04</p>
+              <!--btn image  -->
+              <div class="btn-img btn-img4"></div>
+              <!-- heading -->
+              <h1>Summer Campaign</h1>
+              <!-- details -->
+              <p>12 Picture</p>
+              <p>15 Colors</p>
+            </div>
+          </label>
+        </div>
+      </div>
+      <!-- right -->
+      <div class="right">
+        <div class="toggle"></div>
+      </div>
+      <!-- bottom -->
+      <div class="bottom">
+        <!-- coptyright -->
+        <p class="copyright">Copyright 2020</p>
+        <!-- bottom-menu -->
+        <ul class="b-menu">
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">MODEL</a></li>
+          <li><a href="#">COMPANY</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+        <!-- language -->
+        <p class="language">EN</p>
+      </div>
+    </section>
+
+    <!-- JQUERY -->
+    <script type="text/javascript" src="./js/Jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $(".menu").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
